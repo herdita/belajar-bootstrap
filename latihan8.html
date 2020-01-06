@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>latihan Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style type="text/css">
+    body {
+        font-family: calibri;
+    }
+    
+    .navbar {
+        margin: 0 0 0 0;
+    }
+    
+    .jumbotron {
+        background-image: url(2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .jumbotron h1 {
+        font-family: impact fantasy;
+        color: black;
+    }
+    
+    .jumbotron h4 {
+        font-family: impact fantasy;
+        color: black;
+        opacity: 0.8;
+    }
+    
+    .jumbotron a {
+        font-family: impact fantasy;
+        color: blue;
+        opacity: 0.8;
+    }
+    
+    .well {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: transparent;
+    }
+
+    .caption{
+        margin : 0px 0px 0px 0px;
+    }
+
+    .table tr td{
+        padding: 1px;
+    }
+</style>
+
+<body>
+    <!-- navbar (navigator bar) -->
+    <nav class="navbar navbar-inverse">
+
+        <!-- header logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"> Whowho </a>
+        </div>
+
+        <!-- isi header -->
+        <div class="collapse navbar-collapse" id="list">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"> Home </a></li>
+                <li><a href="#"> Profil </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> About <b class="caret"> </b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"> Biaya </a></li>
+                        <li><a href="#"> Fasilitas </a></li>
+                        <li><a href="#"> Alumni </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form role="search" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Cari...">
+                    <button type="submit" class="btn btn-primary"> Cari </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!--  jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="well">
+                <h1> Selamat datanga di Whowho </h1>
+                <h4> Website yang menyediakan informasi dan pengetahuan yang menarik untuk di pelajari dan dibaca </h4>
+                <a href="#"> pelajari selanjutnya </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- thumbnail -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="1.jpg" class="img-rounded">
+                            <div class="caption">
+                                <h4> Information </h4>
+                                <h5> Program tentang blablabla
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="1.jpg" class="img-rounded">
+                            <div class="caption">
+                                <h4> Information </h4>
+                                <h5> Program tentang blablabla
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="1.jpg" class="img-rounded">
+                            <div class="caption">
+                                <h4> Information </h4>
+                                <h5> Program tentang blablabla
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- menu tabs -->
+                <!-- nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controller="home" role="tab" data-toggle="tab"> Hoem </a></li>
+                    <li role="presentation"><a href="#profil" aria-controller="profil" role="tab" data-toggle="tab"> Profil </a></li>
+                </ul>
+
+                <!-- isi tab -->
+                <div class="tab-content">
+                    <li role="tabpanel" class="tab-pane active" id="home"> hahahahaaha </li>
+                    <li role="tabpanel" class="tab-pane" id="profil"> wkwkwkwwkwkwkw </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th> Nama </th>
+                            <th> Kelas </th>
+                            <th> Sekolah </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th> Nama </th>
+                            <th> Kelas </th>
+                            <th> Sekolah </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                        <tr>
+                            <td> Herdita </td>
+                            <td> If-12 </td>
+                            <td> unikom </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http:www.youtube.com/embed/DnSoSqkDvIs"> </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-success" role="alert">
+            <a class="close" data-dismiss="alert" aria-label="close">&times; </a> perhatian anda berhasil bergabung
+        </div>
+
+        <blockquote>
+            <h4> Sesuatu yang menarik itu harus terus perhatikan </h4>
+            <footer> Herdita permana </footer>
+        </blockquote>
+
+        <code> nama : Herdita </code>
+        <pre>
+            pada waktu itu \
+                aku dan teman taman \
+                    dan aku ingin pergi ke warung 
+        </pre>
+
+        <dl>
+            <dt> daftar menu </dt>
+            <dd> - makanan </dd>
+            <dd> - minuman </dd>
+        </dl>
+
+
+        <table class="table table-condensed">
+            <tbody>
+                <tr>
+                    <td> <img src="1.jpg" class="img-responsive" width="300" height="250"> </td>
+                    <td>
+                        <div class="caption">
+                            <h3> Informasi </h3>
+                            <h4> pada waktu itu aku pergi ke sekolah </h4>
+                            <a href="#" class="btn btn-primary"> Learn more </a>
+                        </div> 
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="1.jpg" class="img-responsive" width="300" height="250"> </td>
+                    <td class="caption">
+                            <h3> Informasi </h3>
+                            <h4> pada waktu itu aku pergi ke sekolah </h4>
+                            <a href="#" class="btn btn-primary"> Learn more </a>
+                    </td>
+                </tr>
+            </tbody>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
